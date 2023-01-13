@@ -14,7 +14,7 @@ import PeopleEnglish from '../pages/people/people-mainEnglish'
 import Xuning from '../pages/people/xuning'
 import XuningEnglish from '../pages/people/xuningEnglish'
 import Songdan from '../pages/people/songdan'
-import SongdanEnglish from '../pages/people/songdanEnglish'
+import SongdanEnglish from '../pages/people/SongdanEnglish'
 import Liujing from '../pages/people/liujing'
 import LiujingEnglish from '../pages/people/liujingEnglish'
 import Suyuting from '../pages/people/suyuting'
@@ -24,7 +24,7 @@ import NieweizhiEnglish from '../pages/people/nieweizhiEnglish'
 import Liuanan from '../pages/people/liuanan'
 import LiuananEnglish from '../pages/people/liuananEnglish'
 import Jingpeiguang from '../pages/people/jingpeiguang'
-import JingpeiguangEnglish from '../pages/people/jingpeiguangEnglish'
+import JingpeiguangEnglish from '../pages/people/JingpeiguangEnglish'
 import Publication2019 from '../pages/publication/publication2019'
 import Publication2018 from '../pages/publication/publication2018'
 import Publication2017 from '../pages/publication/publication2017'
@@ -36,7 +36,7 @@ import Publication2016English from '../pages/publication/publication2016English'
 import Contest1 from '../pages/contest/contest1'
 import Contest1English from '../pages/contest/contest1English'
 import Contest2 from '../pages/contest/contest2'
-import Contest2English from '../pages/contest/contest2English'
+import Contest2English from '../pages/contest/Contest2English'
 
 Vue.use(Router)
 
@@ -113,9 +113,9 @@ const router = new Router({
       component: r => require.ensure([], () => r(require('../pages/people/songdan')), 'songdan')
     },
     {
-      path: '/people/songdanEnglish',
+      path: '/people/SongdanEnglish',
       name: SongdanEnglish,
-      component: r => require.ensure([], () => r(require('../pages/people/songdanEnglish')), 'songdanEnglish')
+      component: r => require.ensure([], () => r(require('../pages/people/SongdanEnglish')), 'SongdanEnglish')
     },
     {
       path: '/people/liujing',
@@ -163,9 +163,9 @@ const router = new Router({
       component: r => require.ensure([], () => r(require('../pages/people/jingpeiguang')), 'jingpeiguang')
     },
     {
-      path: '/people/jingpeiguangEnglish',
+      path: '/people/JingpeiguangEnglish',
       name: JingpeiguangEnglish,
-      component: r => require.ensure([], () => r(require('../pages/people/jingpeiguangEnglish')), 'jingpeiguangEnglish')
+      component: r => require.ensure([], () => r(require('../pages/people/JingpeiguangEnglish')), 'JingpeiguangEnglish')
     },
     {
       path: '/publication/publication2019',
@@ -223,9 +223,9 @@ const router = new Router({
       component: r => require.ensure([], () => r(require('../pages/contest/contest1English')), 'contest1English')
     },
     {
-      path: '/contest/contest2English',
+      path: '/contest/Contest2English',
       name: Contest2English,
-      component: r => require.ensure([], () => r(require('../pages/contest/contest2English')), 'contest2English')
+      component: r => require.ensure([], () => r(require('../pages/contest/Contest2English')), 'Contest2English')
     }
   ]
 })
